@@ -17,6 +17,21 @@ function sillySum(arr){
     return count
 }
 
+function sillySum2(arr){
+    return arr.reduce(function(pre,el,i){
+        return pre + el * i;
+    },0);
+}
+
+
+function sillySum3(arr){
+    var count = 0;
+    arr.forEach(function(el,i){
+        count += el * i;
+    })
+    return count;
+}
+
 arr = [1,2,3,4,5]
 
 //sillySum(arr);
